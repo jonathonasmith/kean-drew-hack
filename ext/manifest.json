@@ -1,0 +1,35 @@
+{
+  "name": "Hack Kean : Extension Dev",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Jonathon Smith, Craig Mileham, Nikita Fedenchenko",
+  "homepage_url": "",
+  "icons": {
+
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/background.js"
+    ],
+    "persistent": false
+  },
+  "options_page": "src/options_custom/index.html",
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "browser action demo",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "permissions": [
+    "bookmarks",
+    "chrome://favicon/",
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "cookies",
+    "fileBrowserHandler",
+    "history",
+    "tabs"
+  ]
+}
